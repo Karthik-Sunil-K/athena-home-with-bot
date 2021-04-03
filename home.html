@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./home.css">
+  <!-- <link rel="stylesheet" media="screen and (max-device-width: 1024px)" href="1024.css" /> -->
+  <!-- <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="768.css" /> -->
+  <link rel="stylesheet" media="screen and (max-device-width: 500px)" href="500.css" />
+  <link rel="stylesheet" media="screen and (max-device-width: 992px)" href="768-992.css" />
+<link rel="stylesheet" href="stars.css">
+
+  <title>ATHENA 2021</title>
+
+
+ <!-- chatbot style   -->
+ <style>
+      
+  df-messenger {
+    --df-messenger-bot-message: black;
+    --df-messenger-button-titlebar-color: orange;
+    --df-messenger-chat-background-color: orange	;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: white;
+    --df-messenger-user-message: #479b3d;
+    --df-messenger-height: 200px;
+
+   }
+    df-messenger {
+    height: 300px;
+    max-height: 70%;
+    min-height: 30%;
+}
+
+    </style>
+<!-- chatbot style end -->
+</head>
+
+<body >
+  
+   
+ 
+  <nav class="navbar navbar-expand-sm fixed-top bg-transparent " id='navigation'>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"  id='navtoggler'><i class="fas fa-bars" style="color:#fff;"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item ml-md-4 mr-md-4  active">
+          <a class="nav-link" href="#home">HOME</a>
+        </li>
+        <li class="nav-item ml-md-4 mr-md-4  ">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item ml-md-4 mr-md-4 ">
+          <a class="nav-link" href="#events">EVENTS</a>
+        </li>
+        <li class="nav-item ml-md-4 mr-md-4 ">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <li id = 'voicerec'><span><button id = 'talk' class = 'btn-sm'><i class="fa fa-audio-description" aria-hidden="true"></i></button></span></li>
+
+    <div id = 'login' style = 'list-style-type:none;'><li><button class = 'btn-sm'>LOGIN/SIGNUP</button></li></div>
+
+
+
+
+
+
+  <div id="home" class='text-center mt-md-5'>
+
+
+
+
+    <!--=======================================================  -->
+
+    <img src="./logo.png" class="img-fluid img-responsive" id='logo' alt="athena official logo">
+
+    <div id="hbox1">
+      <p id='festname'><span>A</span><span>TH</span><span>EN</span><span>A</span></p>
+      <br>
+      <p id='year'><span>'2</span><span>1</span></p>
+    </div>
+
+    <div id='owl-left'><img src="./owl-right.jpg" alt="owl-left"></div>
+    <div id='owl-right'> <img src="./owl-right.jpg" alt="owl-right"></div>
+    <img src="./athena.jpeg" alt="owl-full image" id = 'owl'>
+    <div id="socialmedialinks">
+
+      <div class="social-media-links"><a class="social-media-link social-media-link--facebook" href="#"><i
+            class="fab fa-facebook-f"></i></a>
+          
+            <a class="social-media-link social-media-link--instagram" href="#"><i
+            class="fab fa-instagram"></i></a>
+           
+            <a class="social-media-link social-media-link--youtube" href="#"><i
+            class="fab fa-youtube"></i></a></div>
+    </div>
+
+
+    <div id="scrollDown">
+      <span><a href="#events">^</a></span>
+    </div>
+  </div>
+
+  <img src="./moon.png" class='mx-auto'  id='moon' alt="moon">
+
+
+  <div id="about">
+    <div class="row mx-auto" id='aheading'>
+      <p class='mx-auto mb-5'>ABOUT</p>
+    </div>
+
+    <div class="canvas"></div>
+    <div class="row mx-auto">
+      <div class="col-md-11 mx-auto">
+
+        <div id='arow1' class='mx-auto'>
+
+          <p style='color:white; ' class=' mx-auto my-auto'> ATHENA IS A TECHNO-CULTURAL FEST BY ISTE TKMCE
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-md-3" id='arow2'>
+
+      <div id='botpic'>BOT</div>
+      <div id='botdesc' class='my-auto'>
+        <p>CHAT WITH <span>BOT</span> FOR QUERIES RELATED TO <br><span>A</span>THEN<span>A</span></p>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <div id="events">
+
+    <div id="eheading" class='mb-md-5'>EVENTS</div>
+
+    <div id="eselectionContainer" class='mb-md-5'>
+      <button onclick='openSection()'>Section</button>
+      <button onclick='openWorkshop()'>Workshops</button>
+      <button onclick='openNormal()'>Normal</button>
+    </div>
+
+    <div id="esection">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+        </div> <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+
+    </div>
+
+    <div id="enormal">
+
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+        </div> <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+    <div id="eworkshop">
+
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./poster.jpg)"></div>
+        </div> <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+    <div id='eviewmore'>
+
+      <button>view <span>--></span></button>
+
+    </div>
+
+    <div id="downtoup"><a href="#home"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
+
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+    <script src='./home.js'></script>
+
+    <!-- chatbot script file (do not edit :) ) -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;b5d30c9f-f736-42a3-a887-866d381411a3_x.png"
+  intent="WELCOME"
+  chat-title="Athena"
+  agent-id="83dd20d5-dad1-4acf-a99b-5ffb55dccc6c"
+  language-code="en"
+></df-messenger>
+
+ <!-- chatbot script file end -->
+</body>
+
+</html>
